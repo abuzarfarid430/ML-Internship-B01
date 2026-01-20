@@ -143,30 +143,6 @@ jupyter notebook
 - Generated final processed dataset `titanic_processed.csv`
 
 
-
-## Project Structure
-
-
-ML-Internship-B01/
-│── numpy_basics.py
-│── pandas_exploration.ipynb
-│── titanic_cleaned.csv
-│── data_visualization.py
-│── data_preprocessor.py
-│── titanic_processed.csv
-│── visualizations/
-│   ├── line_age.png
-│   ├── scatter_age_fare.png
-│   ├── histogram_pclass.png
-│   ├── bar_survival.png
-│   ├── box_fare_class.png
-│   ├── violin_age_gender.png
-│   ├── heatmap_corr.png
-│   └── pairplot.png
-│── README.md
-
-
-
 ## Resources
 
 - Kaggle Titanic Dataset
