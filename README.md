@@ -38,6 +38,76 @@ git clone https://github.com/abuzarfarid430/ML-Internship-B01.git
 # Navigate into the directory
 cd ML-Internship-B01
 
+## 📈 Weekly Progress
+
+### ✅ Week 1: Git & GitHub Fundamentals
+- Repository creation and setup
+- Git commands (clone, add, commit, push)
+- README.md documentation
+- Branching and collaboration basics
+
+### ✅ Week 2: Python for Machine Learning
+
+#### 🔹 Task 2.1: NumPy Array Operations
+- Created `numpy_basics.py`
+- Implemented 15 NumPy operations:
+  - Array creation, reshaping, slicing
+  - Mathematical operations
+  - Statistical functions
+- Outputs verified via terminal screenshots
+
+#### 🔹 Task 2.2: Pandas Data Manipulation (Titanic Dataset)
+- Created `pandas_exploration.ipynb`
+- Cleaned missing data (Age, Embarked, Cabin)
+- Performed feature engineering:
+  - FamilySize
+  - IsAlone
+  - Title extraction
+  - AgeGroup
+  - FarePerPerson
+- Generated statistical summaries
+- Exported cleaned dataset as `titanic_cleaned.csv`
+
+#### 🔹 Task 2.3: Data Visualization with Matplotlib & Seaborn
+- Created `data_visualization.py`
+- Generated 8 different plots:
+  - Line plot
+  - Scatter plot
+  - Histogram
+  - Bar chart
+  - Box plot
+  - Violin plot
+  - Heatmap
+  - Pair plot
+- Saved all visualizations as PNG files
+
+## 📸 Screenshots & Visualizations
+
+### 📊 Titanic Dataset Visualizations (Week 2 – Task 2.3)
+
+#### Age Distribution (Line Plot)
+![Age Line Plot](visualizations/line_age.png)
+
+#### Age vs Fare (Scatter Plot)
+![Scatter Plot](visualizations/scatter_age_fare.png)
+
+#### Passenger Class Distribution (Histogram)
+![Histogram](visualizations/histogram_pclass.png)
+
+#### Survival Count (Bar Chart)
+![Bar Chart](visualizations/bar_survival.png)
+
+#### Fare by Passenger Class (Box Plot)
+![Box Plot](visualizations/box_fare_class.png)
+
+#### Age Distribution by Gender (Violin Plot)
+![Violin Plot](visualizations/violin_age_gender.png)
+
+#### Correlation Heatmap
+![Heatmap](visualizations/heatmap_corr.png)
+
+#### Pair Plot of Numerical Features
+![Pair Plot](visualizations/pairplot.png)
 
 MIT License
 
