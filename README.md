@@ -170,32 +170,7 @@ Explore weekly folders to review tasks and implementations.
 * Loaded each model and made predictions
 * Compared file sizes and loading times
 
----
 
-## Project Structure
-
-```text
-ML-Internship-B01/
-│
-├── Week_2/
-│   ├── numpy_basics.py
-│   ├── pandas_exploration.ipynb
-│   ├── data_visualization.py
-│   ├── data_preprocessor.py
-│   └── visualizations/
-│
-├── Week_3/
-│   ├── linear_regression_scratch.py
-│   ├── multiple_regression.py
-│   ├── polynomial_regression.py
-│   ├── model_persistence.py
-│   └── load_and_predict.py
-│
-├── README.md
-└── requirements.txt
-```
-
----
 
 ## Resources
 
