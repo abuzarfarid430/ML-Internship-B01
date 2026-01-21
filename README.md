@@ -6,167 +6,217 @@
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/abuzarfarid430/ML-Internship-B01)
 
 
-## Project Description
+## 📌 Project Description
 
-This repository contains all the work completed during my **Machine Learning Internship (Batch B01)**.  
-It includes Git & GitHub practice, documentation tasks, weekly learning progress, and Machine Learning-related activities.
+This repository contains all the work completed during my **Machine Learning Internship (Batch B01)**.
+It covers Git & GitHub practice, Python for ML, data analysis, and core Machine Learning concepts with hands-on implementations.
 
-The purpose of this repository is to:
-- Practice **Git & GitHub workflows**
-- Maintain **professional documentation**
-- Track **weekly internship progress**
-- Build a strong foundation in **Machine Learning**
+### 🎯 Objectives
+
+* Practice **Git & GitHub workflows**
+* Maintain **professional documentation**
+* Track **weekly internship progress**
+* Build a strong foundation in **Machine Learning**
 
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Technologies Used](#technologies-used)
-- [Weekly Progress](#weekly-progress)
-- [Project Structure](#project-structure)
-- [Resources](#resources)
-- [License](#license)
-- [Contact](#contact)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Screenshots](#screenshots)
+* [Technologies Used](#technologies-used)
+* [Weekly Progress](#weekly-progress)
+* [Project Structure](#project-structure)
+* [Resources](#resources)
+* [License](#license)
+* [Contact](#contact)
 
 
 ## Installation
 
-To use this repository locally, follow these steps:
-
-
+```bash
 # Clone the repository
 git clone https://github.com/abuzarfarid430/ML-Internship-B01.git
 
-# Navigate into the directory
+# Navigate into the project directory
 cd ML-Internship-B01
+```
 
+---
 
+## ▶️ Usage
 
-## Usage
-
-- Run Python scripts using:
-
+```bash
+# Run a Python script
 python filename.py
+```
 
-
-- Open Jupyter notebooks using:
-
+```bash
+# Open Jupyter Notebook
 jupyter notebook
+```
 
+Explore weekly folders to review tasks and implementations.
 
-- Explore weekly tasks and scripts for learning Machine Learning fundamentals.
+---
 
+## 📸 Screenshots
 
+### Week 2 – Titanic Dataset Visualizations
 
-## Screenshots
+* **Age Distribution (Line Plot)**
+  ![Age Line Plot](visualizations/line_age.png)
 
-### Titanic Dataset Visualizations (Week 2 – Task 2.3)
+* **Age vs Fare (Scatter Plot)**
+  ![Scatter Plot](visualizations/scatter_age_fare.png)
 
-#### Age Distribution (Line Plot)
-![Age Line Plot](visualizations/line_age.png)
+* **Passenger Class Distribution (Histogram)**
+  ![Histogram](visualizations/histogram_pclass.png)
 
-#### Age vs Fare (Scatter Plot)
-![Scatter Plot](visualizations/scatter_age_fare.png)
+* **Survival Count (Bar Chart)**
+  ![Bar Chart](visualizations/bar_survival.png)
 
-#### Passenger Class Distribution (Histogram)
-![Histogram](visualizations/histogram_pclass.png)
+* **Fare by Passenger Class (Box Plot)**
+  ![Box Plot](visualizations/box_fare_class.png)
 
-#### Survival Count (Bar Chart)
-![Bar Chart](visualizations/bar_survival.png)
+* **Age Distribution by Gender (Violin Plot)**
+  ![Violin Plot](visualizations/violin_age_gender.png)
 
-#### Fare by Passenger Class (Box Plot)
-![Box Plot](visualizations/box_fare_class.png)
+* **Correlation Heatmap**
+  ![Heatmap](visualizations/heatmap_corr.png)
 
-#### Age Distribution by Gender (Violin Plot)
-![Violin Plot](visualizations/violin_age_gender.png)
+* **Pair Plot of Numerical Features**
+  ![Pair Plot](visualizations/pairplot.png)
 
-#### Correlation Heatmap
-![Heatmap](visualizations/heatmap_corr.png)
+---
 
-#### Pair Plot of Numerical Features
-![Pair Plot](visualizations/pairplot.png)
+## 🛠 Technologies Used
 
+* Python
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* Jupyter Notebook
+* Git & GitHub
 
+---
 
-## Technologies Used
+## 📅 Weekly Progress
 
-- Python
-- NumPy
-- Pandas
-- Matplotlib
-- Seaborn
-- Scikit-learn
-- Jupyter Notebook
-- Git & GitHub
+### ✅ Week 1: Git & GitHub Fundamentals
 
+* Repository creation and setup
+* Git commands (clone, add, commit, push)
+* README documentation
+* Branching and collaboration basics
 
+---
 
-## Weekly Progress
-
-### Week 1: Git & GitHub Fundamentals
-- Repository creation and setup
-- Git commands (clone, add, commit, push)
-- README.md documentation
-- Branching and collaboration basics
-
-### Week 2: Python for Machine Learning
+### ✅ Week 2: Python for Machine Learning
 
 #### Task 2.1: NumPy Array Operations
-- Created `numpy_basics.py`
-- Implemented 15 NumPy operations
-- Practiced array creation, reshaping, slicing, and statistics
+
+* Implemented 15 NumPy operations in `numpy_basics.py`
 
 #### Task 2.2: Pandas Data Manipulation
-- Created `pandas_exploration.ipynb`
-- Cleaned Titanic dataset
-- Handled missing values
-- Performed feature engineering
-- Exported cleaned dataset as `titanic_cleaned.csv`
+
+* Cleaned Titanic dataset
+* Handled missing values
+* Feature engineering
+* Exported `titanic_cleaned.csv`
 
 #### Task 2.3: Data Visualization
-- Created `data_visualization.py`
-- Generated 8 plots using matplotlib and seaborn
-- Saved plots in `visualizations/` folder
-- Documented visual outputs in README
 
-#### Task 2.4: Object-Oriented Programming for ML
-- Created `data_preprocessor.py`
-- Implemented `DataPreprocessor` class
-- Added methods for:
-  - Data loading
-  - Missing value handling
-  - Encoding categorical features
-  - Feature scaling
-  - Train-test splitting
-- Generated final processed dataset `titanic_processed.csv`
+* Created 8 different plots
+* Saved outputs in `visualizations/` folder
 
+#### Task 2.4: OOP for ML
 
-## Resources
+* Implemented `DataPreprocessor` class
+* Generated `titanic_processed.csv`
 
-- Kaggle Titanic Dataset
-- Scikit-learn Documentation
-- Pandas Documentation
-- Matplotlib & Seaborn Docs
+---
 
+### ✅ Week 3: Introduction to Machine Learning
 
+#### Task 3.1: Simple Linear Regression (From Scratch)
 
-## License
+* Implemented Linear Regression without sklearn
+* Used Gradient Descent
+* Manually computed MSE and R²
+* Visualized regression line and cost convergence
+
+#### Task 3.2: Multiple Linear Regression (sklearn)
+
+* Used California Housing dataset
+* Train-test split
+* Evaluated using MAE, MSE, RMSE, and R²
+* Plotted actual vs predicted and residuals
+* Printed coefficients and intercept
+
+#### Task 3.3: Polynomial Regression & Overfitting
+
+* Created non-linear synthetic dataset
+* Trained polynomial models (degrees 1, 2, 3, 5, 10)
+* Compared training vs testing errors
+* Generated learning curves
+* Identified underfitting and overfitting
+
+#### Task 3.4: Model Persistence
+
+* Saved models using Pickle, Joblib, and JSON
+* Loaded each model and made predictions
+* Compared file sizes and loading times
+
+---
+
+## 📂 Project Structure
+
+```text
+ML-Internship-B01/
+│
+├── Week_2/
+│   ├── numpy_basics.py
+│   ├── pandas_exploration.ipynb
+│   ├── data_visualization.py
+│   ├── data_preprocessor.py
+│   └── visualizations/
+│
+├── Week_3/
+│   ├── linear_regression_scratch.py
+│   ├── multiple_regression.py
+│   ├── polynomial_regression.py
+│   ├── model_persistence.py
+│   └── load_and_predict.py
+│
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 📚 Resources
+
+* Kaggle Titanic Dataset
+* California Housing Dataset
+* Scikit-learn Documentation
+* Pandas Documentation
+* Matplotlib & Seaborn Docs
+
+---
+
+## 📜 License
 
 MIT License
+© 2025 **Abu Zar Farid**
 
-Copyright (c) 2025 Abu Zar Farid
+---
 
-Permission is hereby granted, free of charge, to any person obtaining a copy  
-of this software and associated documentation files (the "Software"), to deal  
-in the Software without restriction.
+## 📬 Contact
 
-
-
-## Contact
-
-**Abu Zar Farid**  
-🎓 Machine Learning Intern  
-📧 Email: 22pwbcs0907@uetpeshawar.edu.pk  
-🔗 GitHub: https://github.com/abuzarfarid430
+**Abu Zar Farid**
+🎓 Machine Learning Intern
+📧 Email: [22pwbcs0907@uetpeshawar.edu.pk](mailto:22pwbcs0907@uetpeshawar.edu.pk)
+🔗 GitHub: [https://github.com/abuzarfarid430](https://github.com/abuzarfarid430)
