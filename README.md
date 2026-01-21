@@ -44,7 +44,7 @@ cd ML-Internship-B01
 
 ---
 
-## ▶️ Usage
+## Usage
 
 ```bash
 # Run a Python script
@@ -60,7 +60,7 @@ Explore weekly folders to review tasks and implementations.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ### Week 2 – Titanic Dataset Visualizations
 
@@ -90,7 +90,7 @@ Explore weekly folders to review tasks and implementations.
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 * Python
 * NumPy
@@ -103,7 +103,7 @@ Explore weekly folders to review tasks and implementations.
 
 ---
 
-## 📅 Weekly Progress
+## Weekly Progress
 
 ### ✅ Week 1: Git & GitHub Fundamentals
 
@@ -172,7 +172,7 @@ Explore weekly folders to review tasks and implementations.
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 ML-Internship-B01/
@@ -197,7 +197,7 @@ ML-Internship-B01/
 
 ---
 
-## 📚 Resources
+## Resources
 
 * Kaggle Titanic Dataset
 * California Housing Dataset
@@ -207,14 +207,14 @@ ML-Internship-B01/
 
 ---
 
-## 📜 License
+## License
 
 MIT License
 © 2025 **Abu Zar Farid**
 
 ---
 
-## 📬 Contact
+## Contact
 
 **Abu Zar Farid**
 🎓 Machine Learning Intern
