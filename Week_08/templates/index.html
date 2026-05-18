@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Flower Predictor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 { color: #333; }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #45a049; }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: white;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+            display: none;
+        }
+        .prediction-label { font-size: 24px; font-weight: bold; color: #333; }
+        .confidence { color: #777; margin-top: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🌸 Iris Flower Predictor</h1>
+    <p>Enter the flower measurements below to predict the species.</p>
+
+    <div class="form-group">
+        <label>Sepal Length (cm)</label>
+        <input type="number" id="sepal_length" step="0.1" placeholder="e.g. 5.1" value="5.1">
+    </div>
+    <div class="form-group">
+        <label>Sepal Width (cm)</label>
+        <input type="number" id="sepal_width" step="0.1" placeholder="e.g. 3.5" value="3.5">
+    </div>
+    <div class="form-group">
+        <label>Petal Length (cm)</label>
+        <input type="number" id="petal_length" step="0.1" placeholder="e.g. 1.4" value="1.4">
+    </div>
+    <div class="form-group">
+        <label>Petal Width (cm)</label>
+        <input type="number" id="petal_width" step="0.1" placeholder="e.g. 0.2" value="0.2">
+    </div>
+
+    <button onclick="predict()">Predict Species</button>
+
+    <div id="result">
+        <div class="prediction-label" id="prediction-text"></div>
+        <div class="confidence" id="confidence-text"></div>
+        <div id="probabilities"></div>
+    </div>
+
+    <script>
+        async function predict() {
+            const payload = {
+                sepal_length: parseFloat(document.getElementById("sepal_length").value),
+                sepal_width: parseFloat(document.getElementById("sepal_width").value),
+                petal_length: parseFloat(document.getElementById("petal_length").value),
+                petal_width: parseFloat(document.getElementById("petal_width").value),
+            };
+
+            try {
+                const response = await fetch("/predict", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(payload)
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    alert("Error: " + data.error);
+                    return;
+                }
+
+                document.getElementById("prediction-text").textContent = "🌺 " + data.prediction;
+                document.getElementById("confidence-text").textContent =
+                    `Confidence: ${(data.confidence * 100).toFixed(1)}%`;
+
+                let probHtml = "<br><strong>All probabilities:</strong><ul>";
+                for (const [species, prob] of Object.entries(data.all_probabilities)) {
+                    probHtml += `<li>${species}: ${(prob * 100).toFixed(1)}%</li>`;
+                }
+                probHtml += "</ul>";
+                document.getElementById("probabilities").innerHTML = probHtml;
+
+                document.getElementById("result").style.display = "block";
+            } catch (err) {
+                alert("Failed to connect to the API. Make sure Flask is running.");
+            }
+        }
+    </script>
+</body>
+</html>
